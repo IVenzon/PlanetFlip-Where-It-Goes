@@ -1,0 +1,566 @@
+{
+	"name": "Brain Events",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "'Where It Goes' function"
+		},
+		{
+			"eventType": "comment",
+			"text": "      for ENG100D 1Q25"
+		},
+		{
+			"eventType": "comment",
+			"text": "      partial code from PlanetFlip Waste Wizard app"
+		},
+		{
+			"eventType": "variable",
+			"name": "BrainAnswer",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 658978906289982
+		},
+		{
+			"eventType": "variable",
+			"name": "RecycleService",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "indicates city, county or private (0,1,2)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 588803607754462
+		},
+		{
+			"eventType": "variable",
+			"name": "BrainNum",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "number of items",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 646266877638863
+		},
+		{
+			"eventType": "variable",
+			"name": "BrainLoaded",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "0 = no, 1 = yes",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 600984145813619
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 322278766865966
+				}
+			],
+			"actions": [],
+			"sid": 202924392100486,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 751370116750684,
+							"parameters": {
+								"first-value": "BrainLoaded",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 705358861492866,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Load BrainArray from the JSON file"
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "request-project-file",
+									"objectClass": "AJAX",
+									"sid": 784046723500272,
+									"parameters": {
+										"tag": "\"brainz\"",
+										"file": "brainitems.json"
+									}
+								}
+							],
+							"sid": 794737849471601
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "RecycleBinText",
+							"sid": 726822107810889,
+							"parameters": {
+								"text": "\"start\""
+							}
+						}
+					],
+					"sid": 505133409559736
+				}
+			]
+		},
+		{
+			"functionName": "BrainSelect",
+			"functionDescription": "selects the item from the RecycleArray based on BrainAnswer",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 416759301297650,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "myitem",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 243370101840284
+				},
+				{
+					"eventType": "variable",
+					"name": "myfind",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 428019744716802
+				},
+				{
+					"eventType": "variable",
+					"name": "myi",
+					"type": "number",
+					"initialValue": "-1",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 190299274203252
+				},
+				{
+					"eventType": "variable",
+					"name": "mybin",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 459240995886327
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "RecycleBinText",
+							"sid": 840284444516654,
+							"parameters": {
+								"text": "\"Item not recognized!\""
+							}
+						}
+					],
+					"sid": 948790055028540
+				},
+				{
+					"eventType": "comment",
+					"text": "Loop through the BrainArray"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 261399022782407,
+							"parameters": {
+								"name": "\"\"",
+								"start-index": "0",
+								"end-index": "BrainArray.Width-1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 472634490859350,
+							"parameters": {
+								"variable": "myi",
+								"value": "loopindex"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 842434536600068,
+							"parameters": {
+								"variable": "myitem",
+								"value": "lowercase(BrainArray.At(myi,0) )"
+							}
+						}
+					],
+					"sid": 411831271061432,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Test for the exact match"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 300756405720259,
+									"parameters": {
+										"first-value": "myitem",
+										"comparison": 0,
+										"second-value": "BrainAnswer"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 594128236955270,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 295427335629102,
+											"parameters": {
+												"variable": "myfind",
+												"value": "myitem"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 563325293201018,
+											"parameters": {
+												"variable": "mybin",
+												"value": " lowercase(BrainArray.At(myi,1))"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "RecycleBinText",
+											"sid": 723056500588231,
+											"parameters": {
+												"text": "mybin"
+											}
+										},
+										{
+											"id": "set-function-return-value",
+											"objectClass": "Functions",
+											"sid": 982438522637109,
+											"parameters": {
+												"value": "myfind"
+											}
+										}
+									],
+									"sid": 799882706442386
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 445376530916998
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "When return is pressed, call the BrainSelect function"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 520403201239648,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [],
+			"sid": 129161499664387,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 889076143100382,
+							"parameters": {
+								"variable": "BrainAnswer",
+								"value": "lowercase(BrainTest.Text)"
+							}
+						},
+						{
+							"callFunction": "BrainSelect",
+							"sid": 677071227072928
+						}
+					],
+					"sid": 356427292610540
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "Load the BrainArray and set the count"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 691276749474112,
+					"parameters": {
+						"tag": "\"brainz\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 594861516278187,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 801815516890925,
+							"parameters": {
+								"first-value": "BrainLoaded",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "clear",
+							"objectClass": "BrainArray",
+							"sid": 110429106765939,
+							"parameters": {
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "BrainArray",
+							"sid": 597926790388219,
+							"parameters": {
+								"width": "102",
+								"height": "3",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "load",
+							"objectClass": "BrainArray",
+							"sid": 304500923977631,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 183322191117328
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 925166724997602,
+							"parameters": {
+								"variable": "BrainNum",
+								"value": "BrainArray.Width"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 143145093516468,
+							"parameters": {
+								"variable": "BrainLoaded",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 742908709105404
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 757482169983680,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "GoButton2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "GoButton2",
+					"sid": 583945861984968,
+					"parameters": {
+						"frame-number": "Self.AnimationFrame = 0 ? 1 : 0"
+					}
+				},
+				{
+					"id": "request-speech-recognition",
+					"objectClass": "SpeechRecognition",
+					"sid": 739562753277567,
+					"parameters": {
+						"language": "\"en\"",
+						"mode": "continuous",
+						"results": "interim"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Text",
+					"sid": 453204941431610,
+					"parameters": {
+						"color": "rgbEx(0, 0, 0)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 416967215224126,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "stop-speech-recognition",
+					"objectClass": "SpeechRecognition",
+					"sid": 851313786048967
+				}
+			],
+			"sid": 623524753425721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-result",
+					"objectClass": "SpeechRecognition",
+					"sid": 373336957525446
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Text",
+					"sid": 389542698135073,
+					"parameters": {
+						"text": "SpeechRecognition.InterimTranscript"
+					}
+				}
+			],
+			"sid": 737971086222215
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end",
+					"objectClass": "SpeechRecognition",
+					"sid": 236652519720294
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Text",
+					"sid": 724662366389625,
+					"parameters": {
+						"text": "SpeechRecognition.FinalTranscript"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Text",
+					"sid": 140542929179635,
+					"parameters": {
+						"color": "rgbEx(255, 0, 0)"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "GoButton2",
+					"sid": 455003558319119,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 351019345073974,
+					"parameters": {
+						"variable": "BrainAnswer",
+						"value": "SpeechRecognition.FinalTranscript"
+					}
+				},
+				{
+					"callFunction": "BrainSelect",
+					"sid": 636974415686360
+				}
+			],
+			"sid": 592963782492839
+		}
+	],
+	"sid": 328119879192346
+}

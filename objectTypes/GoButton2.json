@@ -1,0 +1,93 @@
+{
+	"name": "GoButton2",
+	"plugin-id": "Sprite",
+	"sid": 996721569736051,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "isClicked",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 941125917146862
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 849561033586289
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 868855699738377
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 580,
+						"height": 580,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1224844,
+						"collisionPoly": {
+							"points": [
+								0.08646616541353383,
+								0,
+								0.9323308270676691,
+								0.016129032258064516,
+								0.9699248120300752,
+								0.0967741935483871,
+								0.9699248120300752,
+								0.9032258064516129,
+								0.9135338345864662,
+								1,
+								0.06766917293233082,
+								0.9838709677419355,
+								0.03007518796992481,
+								0.9032258064516129,
+								0.03007518796992481,
+								0.0967741935483871
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 640,
+						"height": 640,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4633621,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 522017121213579,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

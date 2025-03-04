@@ -1,0 +1,12 @@
+{
+	"name": "SpeechRecognition",
+	"plugin-id": "SpeechRecognition",
+	"sid": 592959566954851,
+	"singleglobal-inst": {
+		"type": "SpeechRecognition",
+		"properties": {},
+		"uid": 22,
+		"sid": 132294490983100,
+		"tags": ""
+	}
+}

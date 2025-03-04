@@ -1,0 +1,10 @@
+{
+	"name": "BrainTitle",
+	"plugin-id": "Text",
+	"sid": 700302515413362,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

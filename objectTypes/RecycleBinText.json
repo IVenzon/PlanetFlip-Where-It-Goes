@@ -1,0 +1,16 @@
+{
+	"name": "RecycleBinText",
+	"plugin-id": "Text",
+	"sid": 175296019772353,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 228563888851146
+		}
+	],
+	"effectTypes": []
+}

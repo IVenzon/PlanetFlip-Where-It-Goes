@@ -1,0 +1,76 @@
+{
+	"name": "GoAwayBrain",
+	"plugin-id": "Sprite",
+	"sid": 142817570505790,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 885330639326685
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 937726169622720
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 796790724415151
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 29,
+						"originX": 0.48275862068965525,
+						"originY": 0.4482758620689655,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5331506,
+						"collisionPoly": {
+							"points": [
+								0.1724137931034483,
+								0.1724137931034483,
+								0.5,
+								0.034482758620689655,
+								0.8275862068965517,
+								0.1724137931034483,
+								0.9655172413793104,
+								0.5,
+								0.8275862068965517,
+								0.8275862068965517,
+								0.5,
+								0.9655172413793104,
+								0.1724137931034483,
+								0.8275862068965517,
+								0.034482758620689655,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 895378084183155,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

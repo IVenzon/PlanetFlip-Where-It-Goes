@@ -1,0 +1,10 @@
+{
+	"name": "BrainVoiceAnswer",
+	"plugin-id": "Text",
+	"sid": 871120135963492,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,10 @@
+{
+	"name": "BrainQuestion",
+	"plugin-id": "Text",
+	"sid": 283929730084616,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
