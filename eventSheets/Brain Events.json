@@ -467,7 +467,7 @@
 				},
 				{
 					"id": "set-font-color",
-					"objectClass": "Text",
+					"objectClass": "UserTranscript",
 					"sid": 453204941431610,
 					"parameters": {
 						"color": "rgbEx(0, 0, 0)"
@@ -502,7 +502,7 @@
 			"actions": [
 				{
 					"id": "set-text",
-					"objectClass": "Text",
+					"objectClass": "UserTranscript",
 					"sid": 389542698135073,
 					"parameters": {
 						"text": "SpeechRecognition.InterimTranscript"
@@ -523,7 +523,7 @@
 			"actions": [
 				{
 					"id": "set-text",
-					"objectClass": "Text",
+					"objectClass": "UserTranscript",
 					"sid": 724662366389625,
 					"parameters": {
 						"text": "SpeechRecognition.FinalTranscript"
@@ -531,7 +531,7 @@
 				},
 				{
 					"id": "set-font-color",
-					"objectClass": "Text",
+					"objectClass": "UserTranscript",
 					"sid": 140542929179635,
 					"parameters": {
 						"color": "rgbEx(255, 0, 0)"
@@ -560,6 +560,32 @@
 				}
 			],
 			"sid": 592963782492839
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 548618561355023,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "TypeInstead"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "BrainTest",
+					"sid": 330408281546843,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				}
+			],
+			"sid": 676492701752524
 		}
 	],
 	"sid": 328119879192346

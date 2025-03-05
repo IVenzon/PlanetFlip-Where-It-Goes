@@ -128,7 +128,10 @@
 			"Sprite",
 			"Mouse",
 			"SpeechRecognition",
-			"Text"
+			"UserTranscript",
+			"Sprite2",
+			"Sprite3",
+			"TypeInstead"
 		],
 		"subfolders": [
 			{

@@ -280,8 +280,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 32,
-						"y": 300,
+						"x": 54,
+						"y": 899,
 						"width": 428,
 						"height": 175.1592309572086,
 						"originX": 0,
@@ -331,10 +331,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 237,
-						"y": 708,
-						"width": 150.12688411251386,
-						"height": 150.12688411251386,
+						"x": 238.002052600936,
+						"y": 665.002052600936,
+						"width": 116.13098931438589,
+						"height": 116.13098931438589,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -611,10 +611,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 237.23647064050448,
-						"y": 710.9860616330652,
-						"width": 63.42686264548988,
-						"height": 85.96698738727551,
+						"x": 238.05575408088637,
+						"y": 664.8595680823855,
+						"width": 56.085887592135165,
+						"height": 76.01723607529061,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -628,7 +628,7 @@
 					}
 				},
 				{
-					"type": "Text",
+					"type": "UserTranscript",
 					"properties": {
 						"text": "PLEASE CHANGE TO WHAT I WANT!",
 						"enable-bbcode": true,
@@ -667,9 +667,105 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 90.75334504851435,
-						"y": 538.232218087488,
+						"x": 103.32675059384252,
+						"y": 460.1448198294822,
 						"width": 345.347936356776,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 24,
+					"sid": 735926959207154,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 735926959207154,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 245.9322280508591,
+						"y": 330.3711105275506,
+						"width": 405.8939038276811,
+						"height": 182.69197236862357,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TypeInstead",
+					"properties": {
+						"text": "Type item instead",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.7607843137254902,
+							0.7607843137254902,
+							0.7607843137254902,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 25,
+					"sid": 780456424074185,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 780456424074185,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 126.98990727257649,
+						"y": 750.6009682916674,
+						"width": 223.2652557531395,
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
@@ -754,7 +850,7 @@
 				{
 					"type": "BrainQuestion",
 					"properties": {
-						"text": "What item do you want to dispose of?",
+						"text": "Speak the name of your item to be disposed of. I'll show you which bin to use! \n\n(ex. say 'apple core')",
 						"enable-bbcode": true,
 						"font": "Montserrat-SemiBold",
 						"size": 14,
@@ -791,10 +887,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 149,
-						"y": 324,
-						"width": 200,
-						"height": 57,
+						"x": 65.84087370534058,
+						"y": 285.12434694473524,
+						"width": 364.0121877932879,
+						"height": 124.4443119556729,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -811,9 +907,9 @@
 					"type": "BrainTest",
 					"properties": {
 						"text": "",
-						"placeholder": "enter your item and press return",
+						"placeholder": "enter your item and press return ",
 						"tooltip": "",
-						"initially-visible": true,
+						"initially-visible": false,
 						"enabled": true,
 						"read-only": false,
 						"spell-check": false,
@@ -837,8 +933,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 127,
-						"y": 380,
+						"x": 124.97021363714202,
+						"y": 343.06921105623337,
 						"width": 250,
 						"height": 63,
 						"originX": 0,
@@ -897,8 +993,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 234.4249466666455,
-						"y": 581,
+						"x": 239.05728054550445,
+						"y": 504.89784441456015,
 						"width": 270.11198890645267,
 						"height": 40.32894446300082,
 						"originX": 0.5,
