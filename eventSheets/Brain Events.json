@@ -338,6 +338,14 @@
 						{
 							"callFunction": "BrainSelect",
 							"sid": 677071227072928
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BrainTest",
+							"sid": 676322708306119,
+							"parameters": {
+								"visibility": "invisible"
+							}
 						}
 					],
 					"sid": 356427292610540
@@ -501,6 +509,14 @@
 			],
 			"actions": [
 				{
+					"id": "set-visible",
+					"objectClass": "UserTranscript",
+					"sid": 653718046040980,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "UserTranscript",
 					"sid": 389542698135073,
@@ -521,6 +537,14 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "UserTranscript",
+					"sid": 192791250521806,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
 				{
 					"id": "set-text",
 					"objectClass": "UserTranscript",
@@ -583,9 +607,23 @@
 					"parameters": {
 						"visibility": "toggle"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "BrainTest",
+					"sid": 300941395951764,
+					"parameters": {
+						"text": "\"\""
+					}
 				}
 			],
 			"sid": 676492701752524
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 400686368665523
 		}
 	],
 	"sid": 328119879192346

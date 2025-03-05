@@ -643,12 +643,12 @@
 							0,
 							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top-left",
 						"read-aloud": false
 					},
@@ -667,10 +667,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 103.32675059384252,
-						"y": 460.1448198294822,
+						"x": 78.69291967533923,
+						"y": 432.0896815120806,
 						"width": 345.347936356776,
-						"height": 30,
+						"height": 64.21359604702741,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -709,7 +709,7 @@
 					"world": {
 						"x": 245.9322280508591,
 						"y": 330.3711105275506,
-						"width": 405.8939038276811,
+						"width": 405.89390382768113,
 						"height": 182.69197236862357,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -907,7 +907,7 @@
 					"type": "BrainTest",
 					"properties": {
 						"text": "",
-						"placeholder": "enter your item and press return ",
+						"placeholder": "Enter your item here and press return!",
 						"tooltip": "",
 						"initially-visible": false,
 						"enabled": true,
