@@ -1,4 +1,5 @@
-# ENG 100D A00 Project Group C - Winter 2025 | PlanetFlip: Where It Goes
+# ENG 100D A00 Winter 2025
+# Project Group C | PlanetFlip: Where It Goes
 
 ## Team Members:
 
