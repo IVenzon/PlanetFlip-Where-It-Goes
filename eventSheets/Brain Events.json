@@ -316,8 +316,8 @@
 					"actions": [
 						{
 							"id": "set-animation-frame",
-							"objectClass": "Sprite2",
-							"sid": 567932597549277,
+							"objectClass": "RecycleBin",
+							"sid": 532352098493170,
 							"parameters": {
 								"frame-number": "0"
 							}
@@ -347,10 +347,10 @@
 					"actions": [
 						{
 							"id": "set-animation-frame",
-							"objectClass": "Sprite2",
-							"sid": 367920778568866,
+							"objectClass": "RecycleBin",
+							"sid": 622441291537467,
 							"parameters": {
-								"frame-number": "1"
+								"frame-number": "2"
 							}
 						}
 					],
@@ -378,10 +378,10 @@
 					"actions": [
 						{
 							"id": "set-animation-frame",
-							"objectClass": "Sprite2",
-							"sid": 317415156527162,
+							"objectClass": "RecycleBin",
+							"sid": 623096945959715,
 							"parameters": {
-								"frame-number": "2"
+								"frame-number": "1"
 							}
 						}
 					],
@@ -409,8 +409,8 @@
 					"actions": [
 						{
 							"id": "set-animation-frame",
-							"objectClass": "Sprite2",
-							"sid": 468678988334327,
+							"objectClass": "RecycleBin",
+							"sid": 195367856975201,
 							"parameters": {
 								"frame-number": "3"
 							}
@@ -440,8 +440,8 @@
 					"actions": [
 						{
 							"id": "set-animation-frame",
-							"objectClass": "Sprite2",
-							"sid": 398975506252908,
+							"objectClass": "RecycleBin",
+							"sid": 684893406484873,
 							"parameters": {
 								"frame-number": "4"
 							}
@@ -461,10 +461,10 @@
 					"actions": [
 						{
 							"id": "set-animation-frame",
-							"objectClass": "Sprite2",
-							"sid": 689153155080169,
+							"objectClass": "RecycleBin",
+							"sid": 460600820035483,
 							"parameters": {
-								"frame-number": "5"
+								"frame-number": "8"
 							}
 						}
 					],
@@ -847,8 +847,8 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite2",
-					"sid": 649964254488722,
+					"objectClass": "RecycleBin",
+					"sid": 716703164033273,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -893,8 +893,8 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite2",
-					"sid": 502066895525995,
+					"objectClass": "RecycleBin",
+					"sid": 758043569935387,
 					"parameters": {
 						"visibility": "invisible"
 					}

@@ -97,64 +97,6 @@
 					}
 				},
 				{
-					"type": "RecycleBin",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 2,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 4,
-					"sid": 643554280229982,
-					"tags": "",
-					"instanceVariables": {
-						"name": "trash",
-						"type": "trash",
-						"lesson": ""
-					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						},
-						"Flash": {
-							"properties": {}
-						},
-						"Tween": {
-							"properties": {
-								"enabled": false
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 643554280229982,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 537,
-						"y": 279,
-						"width": 95.74364008344155,
-						"height": 191.1012171020305,
-						"originX": 0,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "BrainWiz",
 					"properties": {
 						"initially-visible": true,
@@ -843,8 +785,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 237.89611609499693,
-						"y": 502.63688219992383,
+						"x": 712,
+						"y": 186,
 						"width": 66.79754224858759,
 						"height": 134.5920627396914,
 						"originX": 0.5,
@@ -1048,7 +990,7 @@
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top",
 						"read-aloud": false
 					},
@@ -1079,6 +1021,64 @@
 						"height": 40.32894446300082,
 						"originX": 0.5,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RecycleBin",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 2,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4,
+					"sid": 643554280229982,
+					"tags": "",
+					"instanceVariables": {
+						"name": "trash",
+						"type": "trash",
+						"lesson": ""
+					},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": false
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 643554280229982,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 189,
+						"y": 592,
+						"width": 95.74364008344155,
+						"height": 191.1012171020305,
+						"originX": 0,
+						"originY": 1,
 						"color": [
 							1,
 							1,
