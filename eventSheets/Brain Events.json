@@ -185,6 +185,10 @@
 							"parameters": {
 								"text": "\"Item not recognized!\""
 							}
+						},
+						{
+							"callFunction": "TextSmallToBig",
+							"sid": 810033231969787
 						}
 					],
 					"sid": 948790055028540
@@ -297,9 +301,174 @@
 				},
 				{
 					"eventType": "block",
-					"conditions": [],
-					"actions": [],
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 342611037591978,
+							"parameters": {
+								"variable": "mybin",
+								"comparison": 0,
+								"value": "\"trash\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Sprite2",
+							"sid": 567932597549277,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
 					"sid": 445376530916998
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 935070267344766
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 140233071159454,
+							"parameters": {
+								"variable": "mybin",
+								"comparison": 0,
+								"value": "\"recycling\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Sprite2",
+							"sid": 367920778568866,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 593875365440053
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 883024345699705
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 266286940208380,
+							"parameters": {
+								"variable": "mybin",
+								"comparison": 0,
+								"value": "\"compost\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Sprite2",
+							"sid": 317415156527162,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 976465710899853
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 645267526003332
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 920041554783715,
+							"parameters": {
+								"variable": "mybin",
+								"comparison": 0,
+								"value": "\"hazardous\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Sprite2",
+							"sid": 468678988334327,
+							"parameters": {
+								"frame-number": "3"
+							}
+						}
+					],
+					"sid": 988406470052048
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 985521157182092
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 740477996492901,
+							"parameters": {
+								"variable": "mybin",
+								"comparison": 0,
+								"value": "\"donate\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Sprite2",
+							"sid": 398975506252908,
+							"parameters": {
+								"frame-number": "4"
+							}
+						}
+					],
+					"sid": 798219256485918
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 595665122938124
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Sprite2",
+							"sid": 689153155080169,
+							"parameters": {
+								"frame-number": "5"
+							}
+						}
+					],
+					"sid": 541665901269342
 				}
 			]
 		},
@@ -464,6 +633,10 @@
 					}
 				},
 				{
+					"callFunction": "TextBigToSmall",
+					"sid": 461291205651995
+				},
+				{
 					"id": "request-speech-recognition",
 					"objectClass": "SpeechRecognition",
 					"sid": 739562753277567,
@@ -471,6 +644,14 @@
 						"language": "\"en\"",
 						"mode": "continuous",
 						"results": "interim"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainTest",
+					"sid": 607443174931764,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				},
 				{
@@ -484,9 +665,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 416967215224126,
+					"sid": 542559190340382,
 					"parameters": {
-						"seconds": "5",
+						"seconds": "3",
 						"use-timescale": true
 					}
 				},
@@ -615,6 +796,10 @@
 					"parameters": {
 						"text": "\"\""
 					}
+				},
+				{
+					"callFunction": "TextBigToSmall",
+					"sid": 348028369033577
 				}
 			],
 			"sid": 676492701752524
@@ -624,6 +809,98 @@
 			"conditions": [],
 			"actions": [],
 			"sid": 400686368665523
+		},
+		{
+			"functionName": "TextSmallToBig",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxBig",
+					"sid": 201024640444830,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxSmall",
+					"sid": 552828023123708,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainQuestion",
+					"sid": 826545086723394,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 649964254488722,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 203307401652901
+		},
+		{
+			"functionName": "TextBigToSmall",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxBig",
+					"sid": 335872909028749,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxSmall",
+					"sid": 346889427881416,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainQuestion",
+					"sid": 760908325205074,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 502066895525995,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 232275761189562
 		}
 	],
 	"sid": 328119879192346
