@@ -872,7 +872,7 @@
 				{
 					"type": "BrainQuestion",
 					"properties": {
-						"text": "Speak the name of your item to be disposed of. I'll show you which bin to use! \n\n(ex. say 'apple core')",
+						"text": "Speak the name of your item to be disposed of. I'll show you which bin to use \n\n(ex. say 'apple core')",
 						"enable-bbcode": true,
 						"font": "Montserrat-SemiBold",
 						"size": 14,
