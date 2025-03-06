@@ -630,7 +630,7 @@
 				{
 					"type": "UserTranscript",
 					"properties": {
-						"text": "PLEASE CHANGE TO WHAT I WANT!",
+						"text": "USER TRANSCRIPT WILL APPEAR HERE!",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
