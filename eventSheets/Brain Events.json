@@ -505,6 +505,14 @@
 							}
 						},
 						{
+							"id": "set-text",
+							"objectClass": "ItemName",
+							"sid": 261696557045743,
+							"parameters": {
+								"text": "lowercase(BrainTest.Text)"
+							}
+						},
+						{
 							"callFunction": "BrainSelect",
 							"sid": 677071227072928
 						},
@@ -762,6 +770,14 @@
 				{
 					"callFunction": "BrainSelect",
 					"sid": 636974415686360
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ItemName",
+					"sid": 872654267639684,
+					"parameters": {
+						"text": "lowercase(SpeechRecognition.FinalTranscript)"
+					}
 				}
 			],
 			"sid": 592963782492839
@@ -852,6 +868,14 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ItemName",
+					"sid": 507084979175705,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 203307401652901
@@ -895,6 +919,14 @@
 					"id": "set-visible",
 					"objectClass": "RecycleBin",
 					"sid": 758043569935387,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ItemName",
+					"sid": 672014776510301,
 					"parameters": {
 						"visibility": "invisible"
 					}

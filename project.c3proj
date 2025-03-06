@@ -133,7 +133,8 @@
 			"Sprite3",
 			"TypeInstead",
 			"TextBoxBig",
-			"Sprite2"
+			"Sprite2",
+			"ItemName"
 		],
 		"subfolders": [
 			{
