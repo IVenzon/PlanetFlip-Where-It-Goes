@@ -84,6 +84,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Anchor",
 			"name": "Anchor",
@@ -144,6 +151,8 @@
 			"PointsContainer",
 			"Points",
 			"LocalStorage"
+			"ItemName",
+			"Touch"
 		],
 		"subfolders": [
 			{

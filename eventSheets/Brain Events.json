@@ -25,6 +25,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "CurrentUserItem",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 479191188137300
+		},
+		{
+			"eventType": "variable",
 			"name": "RecycleService",
 			"type": "number",
 			"initialValue": "0",
@@ -521,6 +531,15 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 424044998430573,
+							"parameters": {
+								"variable": "CurrentUserItem",
+								"value": "BrainTest.Text"
+							}
+						},
+						{
 							"callFunction": "BrainSelect",
 							"sid": 677071227072928
 						},
@@ -533,7 +552,56 @@
 							}
 						}
 					],
-					"sid": 356427292610540
+					"sid": 356427292610540,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 526127902314421,
+									"parameters": {
+										"first-value": "CurrentUserItem",
+										"comparison": 0,
+										"second-value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "ItemName",
+									"sid": 688623917621918,
+									"parameters": {
+										"text": "\"No item entered!\""
+									}
+								}
+							],
+							"sid": 808652292934158
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 211908797620151
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "ItemName",
+									"sid": 101013746618540,
+									"parameters": {
+										"text": "CurrentUserItem"
+									}
+								}
+							],
+							"sid": 809952108025657
+						}
+					]
 				}
 			]
 		},
@@ -629,13 +697,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 757482169983680,
+					"id": "on-hold-over-object",
+					"objectClass": "Touch",
+					"sid": 499301827891383,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "GoButton2"
+						"object": "GoButton2"
 					}
 				}
 			],
@@ -677,23 +743,27 @@
 					"parameters": {
 						"color": "rgbEx(0, 0, 0)"
 					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 542559190340382,
-					"parameters": {
-						"seconds": "3",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "stop-speech-recognition",
-					"objectClass": "SpeechRecognition",
-					"sid": 851313786048967
 				}
 			],
 			"sid": 623524753425721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 650454508903213
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-speech-recognition",
+					"objectClass": "SpeechRecognition",
+					"sid": 747787288559818
+				}
+			],
+			"sid": 788759566357035
 		},
 		{
 			"eventType": "block",
@@ -737,9 +807,9 @@
 				{
 					"id": "set-visible",
 					"objectClass": "UserTranscript",
-					"sid": 192791250521806,
+					"sid": 141886190803917,
 					"parameters": {
-						"visibility": "visible"
+						"visibility": "invisible"
 					}
 				},
 				{
@@ -778,21 +848,77 @@
 				{
 					"callFunction": "BrainSelect",
 					"sid": 636974415686360
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 360834707805891,
+					"parameters": {
+						"variable": "CurrentUserItem",
+						"value": "SpeechRecognition.FinalTranscript"
+					}
 				}
 			],
-			"sid": 592963782492839
+			"sid": 592963782492839,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 796448802958306,
+							"parameters": {
+								"first-value": "CurrentUserItem",
+								"comparison": 0,
+								"second-value": "\"\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "ItemName",
+							"sid": 309727089517480,
+							"parameters": {
+								"text": "\"You didn't say anything!\""
+							}
+						}
+					],
+					"sid": 947133378375531
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 193252958633646
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "ItemName",
+							"sid": 603255982048352,
+							"parameters": {
+								"text": "CurrentUserItem"
+							}
+						}
+					],
+					"sid": 710728901944249
+				}
+			]
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 548618561355023,
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 448373454796913,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "TypeInstead"
+						"object": "TypeInstead"
 					}
 				}
 			],
@@ -868,6 +994,14 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ItemName",
+					"sid": 507084979175705,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 203307401652901
@@ -911,6 +1045,14 @@
 					"id": "set-visible",
 					"objectClass": "RecycleBin",
 					"sid": 758043569935387,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ItemName",
+					"sid": 672014776510301,
 					"parameters": {
 						"visibility": "invisible"
 					}
