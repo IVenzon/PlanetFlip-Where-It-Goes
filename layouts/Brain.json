@@ -819,7 +819,7 @@
 						],
 						"horizontal-alignment": "center",
 						"vertical-alignment": "top",
-						"wrapping": "word",
+						"wrapping": "character",
 						"text-direction": "ltr",
 						"icon-set": -1,
 						"initially-visible": false,
@@ -844,7 +844,7 @@
 						"x": 97.57252682170787,
 						"y": 290.62759954976235,
 						"width": 295.37567061327064,
-						"height": 57.81788076844248,
+						"height": 139.28458573157036,
 						"originX": 0,
 						"originY": 0,
 						"color": [

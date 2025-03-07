@@ -621,13 +621,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 757482169983680,
+					"id": "on-hold-over-object",
+					"objectClass": "Touch",
+					"sid": 499301827891383,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "GoButton2"
+						"object": "GoButton2"
 					}
 				}
 			],
@@ -669,23 +667,27 @@
 					"parameters": {
 						"color": "rgbEx(0, 0, 0)"
 					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 542559190340382,
-					"parameters": {
-						"seconds": "3",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "stop-speech-recognition",
-					"objectClass": "SpeechRecognition",
-					"sid": 851313786048967
 				}
 			],
 			"sid": 623524753425721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-end",
+					"objectClass": "Touch",
+					"sid": 650454508903213
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-speech-recognition",
+					"objectClass": "SpeechRecognition",
+					"sid": 747787288559818
+				}
+			],
+			"sid": 788759566357035
 		},
 		{
 			"eventType": "block",
@@ -786,13 +788,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 548618561355023,
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 448373454796913,
 					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "TypeInstead"
+						"object": "TypeInstead"
 					}
 				}
 			],
