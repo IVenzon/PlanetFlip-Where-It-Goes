@@ -25,6 +25,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "CurrentUserItem",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 479191188137300
+		},
+		{
+			"eventType": "variable",
 			"name": "RecycleService",
 			"type": "number",
 			"initialValue": "0",
@@ -505,11 +515,12 @@
 							}
 						},
 						{
-							"id": "set-text",
-							"objectClass": "ItemName",
-							"sid": 261696557045743,
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 424044998430573,
 							"parameters": {
-								"text": "lowercase(BrainTest.Text)"
+								"variable": "CurrentUserItem",
+								"value": "BrainTest.Text"
 							}
 						},
 						{
@@ -525,7 +536,56 @@
 							}
 						}
 					],
-					"sid": 356427292610540
+					"sid": 356427292610540,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 526127902314421,
+									"parameters": {
+										"first-value": "CurrentUserItem",
+										"comparison": 0,
+										"second-value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "ItemName",
+									"sid": 688623917621918,
+									"parameters": {
+										"text": "\"No item entered!\""
+									}
+								}
+							],
+							"sid": 808652292934158
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 211908797620151
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "ItemName",
+									"sid": 101013746618540,
+									"parameters": {
+										"text": "CurrentUserItem"
+									}
+								}
+							],
+							"sid": 809952108025657
+						}
+					]
 				}
 			]
 		},
@@ -731,9 +791,9 @@
 				{
 					"id": "set-visible",
 					"objectClass": "UserTranscript",
-					"sid": 192791250521806,
+					"sid": 141886190803917,
 					"parameters": {
-						"visibility": "visible"
+						"visibility": "invisible"
 					}
 				},
 				{
@@ -774,15 +834,65 @@
 					"sid": 636974415686360
 				},
 				{
-					"id": "set-text",
-					"objectClass": "ItemName",
-					"sid": 872654267639684,
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 360834707805891,
 					"parameters": {
-						"text": "lowercase(SpeechRecognition.FinalTranscript)"
+						"variable": "CurrentUserItem",
+						"value": "SpeechRecognition.FinalTranscript"
 					}
 				}
 			],
-			"sid": 592963782492839
+			"sid": 592963782492839,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 796448802958306,
+							"parameters": {
+								"first-value": "CurrentUserItem",
+								"comparison": 0,
+								"second-value": "\"\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "ItemName",
+							"sid": 309727089517480,
+							"parameters": {
+								"text": "\"You didn't say anything!\""
+							}
+						}
+					],
+					"sid": 947133378375531
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 193252958633646
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "ItemName",
+							"sid": 603255982048352,
+							"parameters": {
+								"text": "CurrentUserItem"
+							}
+						}
+					],
+					"sid": 710728901944249
+				}
+			]
 		},
 		{
 			"eventType": "block",
