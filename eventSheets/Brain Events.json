@@ -115,6 +115,22 @@
 							"parameters": {
 								"text": "\"start\""
 							}
+						},
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 861462322707490,
+							"parameters": {
+								"key": "\"points\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Points",
+							"sid": 580027420101730,
+							"parameters": {
+								"text": "LocalStorage.ItemValue"
+							}
 						}
 					],
 					"sid": 505133409559736
