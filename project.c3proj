@@ -43,6 +43,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -142,7 +149,10 @@
 			"TextBoxBig",
 			"Sprite2",
 			"ItemName",
-			"Touch"
+			"Touch",
+			"Sprite4",
+			"PointsCounter",
+			"LocalStorage"
 		],
 		"subfolders": [
 			{
