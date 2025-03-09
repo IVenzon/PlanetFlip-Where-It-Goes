@@ -347,6 +347,14 @@
 							"parameters": {
 								"frame-number": "0"
 							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "RecycleBinText",
+							"sid": 191052280062387,
+							"parameters": {
+								"text": "\"Trash Bin\""
+							}
 						}
 					],
 					"sid": 445376530916998
@@ -377,6 +385,14 @@
 							"sid": 622441291537467,
 							"parameters": {
 								"frame-number": "2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "RecycleBinText",
+							"sid": 422336545611815,
+							"parameters": {
+								"text": "\"Recycling Bin\""
 							}
 						}
 					],
@@ -409,6 +425,14 @@
 							"parameters": {
 								"frame-number": "1"
 							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "RecycleBinText",
+							"sid": 589732199296153,
+							"parameters": {
+								"text": "\"Compost Bin\""
+							}
 						}
 					],
 					"sid": 976465710899853
@@ -439,6 +463,14 @@
 							"sid": 195367856975201,
 							"parameters": {
 								"frame-number": "3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "RecycleBinText",
+							"sid": 684224959248905,
+							"parameters": {
+								"text": "\"Hazardous Waste Site\""
 							}
 						}
 					],
@@ -471,6 +503,14 @@
 							"parameters": {
 								"frame-number": "4"
 							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "RecycleBinText",
+							"sid": 983333842140720,
+							"parameters": {
+								"text": "\"Donation Center\""
+							}
 						}
 					],
 					"sid": 798219256485918
@@ -488,7 +528,7 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "RecycleBin",
-							"sid": 460600820035483,
+							"sid": 963016183306107,
 							"parameters": {
 								"frame-number": "8"
 							}
@@ -1002,6 +1042,14 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RecycleBinText",
+					"sid": 520327868578752,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 203307401652901
@@ -1056,9 +1104,63 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RecycleBinText",
+					"sid": 860791038207891,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 232275761189562
+		},
+		{
+			"functionName": "HideUserInput",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "GoButton2",
+					"sid": 973749438975519,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite",
+					"sid": 436398158544140,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainTest",
+					"sid": 890641104147238,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TypeInstead",
+					"sid": 439712505287017,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 663851927693159
 		}
 	],
 	"sid": 328119879192346
