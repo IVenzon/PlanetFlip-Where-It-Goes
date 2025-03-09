@@ -152,7 +152,9 @@
 			"Touch",
 			"Sprite4",
 			"PointsCounter",
-			"LocalStorage"
+			"LocalStorage",
+			"YesButton",
+			"NoButton"
 		],
 		"subfolders": [
 			{

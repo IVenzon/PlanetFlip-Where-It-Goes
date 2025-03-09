@@ -988,8 +988,30 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
-			"actions": [],
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 497273001072338,
+					"parameters": {
+						"object": "NoButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "TextBigToSmall",
+					"sid": 635921408536578
+				},
+				{
+					"callFunction": "ShowUserInput",
+					"sid": 359286277350097
+				},
+				{
+					"callFunction": "HideConfirmation",
+					"sid": 813661775142658
+				}
+			],
 			"sid": 400686368665523
 		},
 		{
@@ -1050,6 +1072,10 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"callFunction": "HideUserInput",
+					"sid": 463851385116041
 				}
 			],
 			"sid": 203307401652901
@@ -1158,9 +1184,111 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"callFunction": "ShowConfirmation",
+					"sid": 654740446603340
 				}
 			],
 			"sid": 663851927693159
+		},
+		{
+			"functionName": "ShowUserInput",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "GoButton2",
+					"sid": 110639358032392,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite",
+					"sid": 202896376500252,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TypeInstead",
+					"sid": 265188190567321,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 801698907654648
+		},
+		{
+			"functionName": "HideConfirmation",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "YesButton",
+					"sid": 203693230498061,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "NoButton",
+					"sid": 226023948982254,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 299932405825855
+		},
+		{
+			"functionName": "ShowConfirmation",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "YesButton",
+					"sid": 242492497940324,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "NoButton",
+					"sid": 575969782148615,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 191680908968771
 		}
 	],
 	"sid": 328119879192346
