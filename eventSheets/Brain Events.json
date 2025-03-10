@@ -1326,6 +1326,14 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ConfirmationQuestion",
+					"sid": 256481508194504,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 299932405825855
@@ -1353,6 +1361,14 @@
 					"id": "set-visible",
 					"objectClass": "NoButton",
 					"sid": 575969782148615,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ConfirmationQuestion",
+					"sid": 444782918224174,
 					"parameters": {
 						"visibility": "visible"
 					}

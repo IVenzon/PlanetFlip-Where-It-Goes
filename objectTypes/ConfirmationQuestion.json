@@ -1,0 +1,10 @@
+{
+	"name": "ConfirmationQuestion",
+	"plugin-id": "Text",
+	"sid": 295987958635071,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

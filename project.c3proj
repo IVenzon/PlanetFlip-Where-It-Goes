@@ -170,7 +170,8 @@
 			"YesButton",
 			"NoButton",
 			"Confetti",
-			"Particles"
+			"Particles",
+			"ConfirmationQuestion"
 		],
 		"subfolders": [
 			{
