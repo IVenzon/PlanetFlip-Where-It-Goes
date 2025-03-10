@@ -64,6 +64,16 @@
 			"sid": 600984145813619
 		},
 		{
+			"eventType": "variable",
+			"name": "UserPoints",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 930191444006367
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -72,7 +82,16 @@
 					"sid": 322278766865966
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 348481083720237,
+					"parameters": {
+						"key": "\"points\""
+					}
+				}
+			],
 			"sid": 202924392100486,
 			"children": [
 				{
@@ -125,27 +144,85 @@
 							"parameters": {
 								"text": "\"start\""
 							}
-						},
-						{
-							"id": "get-item",
-							"objectClass": "LocalStorage",
-							"sid": 737313034854501,
-							"parameters": {
-								"key": "\"points\""
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "PointsCounter",
-							"sid": 310557324344707,
-							"parameters": {
-								"text": "LocalStorage.ErrorMessage"
-							}
 						}
 					],
 					"sid": 505133409559736
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 750190588484300,
+					"parameters": {
+						"key": "\"points\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 507004140459165,
+					"parameters": {
+						"variable": "UserPoints",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PointsCounter",
+					"sid": 213548952791201,
+					"parameters": {
+						"text": "UserPoints"
+					}
+				}
+			],
+			"sid": 168259644922090
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 890144596766416,
+					"parameters": {
+						"key": "\"points\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 918586803916108,
+					"parameters": {
+						"key": "\"points\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 625275372599702,
+					"parameters": {
+						"variable": "UserPoints",
+						"value": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PointsCounter",
+					"sid": 491158613838778,
+					"parameters": {
+						"text": "UserPoints"
+					}
+				}
+			],
+			"sid": 902271239821384
 		},
 		{
 			"functionName": "BrainSelect",
@@ -1026,6 +1103,32 @@
 				{
 					"callFunction": "ShootConfetti",
 					"sid": 292085702781261
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 657328566346190,
+					"parameters": {
+						"key": "\"points\"",
+						"value": "UserPoints + 5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 534546374087721,
+					"parameters": {
+						"variable": "UserPoints",
+						"value": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PointsCounter",
+					"sid": 124976934724315,
+					"parameters": {
+						"text": "UserPoints + 5"
+					}
 				}
 			],
 			"sid": 101913621851479
