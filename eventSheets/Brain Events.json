@@ -552,6 +552,11 @@
 					"parameters": {
 						"key": 13
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "BrainTest",
+					"sid": 935276676847192
 				}
 			],
 			"actions": [],
@@ -743,6 +748,11 @@
 					"parameters": {
 						"object": "GoButton2"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "GoButton2",
+					"sid": 311327866992420
 				}
 			],
 			"actions": [
@@ -960,6 +970,11 @@
 					"parameters": {
 						"object": "TypeInstead"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "TypeInstead",
+					"sid": 383920143962343
 				}
 			],
 			"actions": [
@@ -992,10 +1007,44 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
+					"sid": 545723229325180,
+					"parameters": {
+						"object": "YesButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "YesButton",
+					"sid": 355214057998326
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "HideConfirmation",
+					"sid": 422380752175493
+				},
+				{
+					"callFunction": "ShootConfetti",
+					"sid": 292085702781261
+				}
+			],
+			"sid": 101913621851479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
 					"sid": 497273001072338,
 					"parameters": {
 						"object": "NoButton"
 					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "NoButton",
+					"sid": 456039892998047
 				}
 			],
 			"actions": [
@@ -1013,6 +1062,27 @@
 				}
 			],
 			"sid": 400686368665523
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Confetti",
+					"sid": 334185606898530
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "Confetti",
+					"sid": 350113356876970,
+					"parameters": {
+						"color": "random(99999999)"
+					}
+				}
+			],
+			"sid": 606702906631748
 		},
 		{
 			"functionName": "TextSmallToBig",
@@ -1163,7 +1233,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite",
+					"objectClass": "Mic",
 					"sid": 436398158544140,
 					"parameters": {
 						"visibility": "invisible"
@@ -1213,7 +1283,7 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite",
+					"objectClass": "Mic",
 					"sid": 202896376500252,
 					"parameters": {
 						"visibility": "visible"
@@ -1289,6 +1359,33 @@
 				}
 			],
 			"sid": 191680908968771
+		},
+		{
+			"functionName": "ShootConfetti",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 345203170277265,
+					"parameters": {
+						"object-to-create": "Particles",
+						"layer": "4",
+						"x": "245",
+						"y": "958",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 530861552165738
 		}
 	],
 	"sid": 328119879192346

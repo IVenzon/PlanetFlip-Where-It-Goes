@@ -57,6 +57,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "SpeechRecognition",
 			"name": "Speech recognition",
 			"author": "Scirra",
@@ -120,6 +127,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
@@ -139,7 +153,7 @@
 			"Keyboard",
 			"Browser",
 			"TopTitle2",
-			"Sprite",
+			"Mic",
 			"Mouse",
 			"SpeechRecognition",
 			"UserTranscript",
@@ -154,7 +168,9 @@
 			"PointsCounter",
 			"LocalStorage",
 			"YesButton",
-			"NoButton"
+			"NoButton",
+			"Confetti",
+			"Particles"
 		],
 		"subfolders": [
 			{
