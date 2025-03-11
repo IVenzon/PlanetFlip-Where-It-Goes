@@ -1209,7 +1209,7 @@
 				{
 					"id": "go-to-url",
 					"objectClass": "Browser",
-					"sid": 809315393903250,
+					"sid": 667899632566271,
 					"parameters": {
 						"url": "\"https://www.google.com/maps/search/goodwill/\"",
 						"target": "self"
@@ -1264,9 +1264,9 @@
 				{
 					"id": "set-default-color",
 					"objectClass": "Confetti",
-					"sid": 350113356876970,
+					"sid": 497944527432241,
 					"parameters": {
-						"color": "random(99999999)"
+						"color": "random(9999999999)"
 					}
 				}
 			],
