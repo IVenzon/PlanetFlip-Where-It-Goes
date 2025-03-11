@@ -476,9 +476,9 @@
 				{
 					"type": "BrainText",
 					"properties": {
-						"text": "ENG100 version 3.2",
+						"text": "ENG100D version 3.2",
 						"enable-bbcode": true,
-						"font": "Montserrat",
+						"font": "Poppins",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -670,7 +670,7 @@
 					"properties": {
 						"text": "Type item instead",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Poppins",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -884,7 +884,7 @@
 						"x": 349.8406791541884,
 						"y": 685.0910139989169,
 						"width": 194.1237745048409,
-						"height": 56.47237076504461,
+						"height": 56.472370765044616,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -924,7 +924,7 @@
 						"x": 141.71611674383266,
 						"y": 685.0081046565513,
 						"width": 195.62912255487927,
-						"height": 56.91029019778306,
+						"height": 56.910290197783056,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1048,7 +1048,7 @@
 					"properties": {
 						"text": "Did you dispose of it correctly?",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Poppins",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -1087,6 +1087,102 @@
 						"y": 624.442015766552,
 						"width": 345.1689685632899,
 						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DoneButton",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 38,
+					"sid": 191128279872280,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 191128279872280,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 243.4292240179151,
+						"y": 746.1582819474887,
+						"width": 183.71442403920358,
+						"height": 53.44419608413196,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ItemInstructions",
+					"properties": {
+						"text": "Instructions Here",
+						"enable-bbcode": true,
+						"font": "Poppins",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 39,
+					"sid": 933465128578566,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 933465128578566,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 65.06143063613342,
+						"y": 512.741476185663,
+						"width": 360.48864360285035,
+						"height": 89.81852782736723,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1172,8 +1268,8 @@
 					"properties": {
 						"text": "Speak the name of your item to be disposed of. I'll show you which bin to use! \n\n(ex. say 'apple core')",
 						"enable-bbcode": true,
-						"font": "Montserrat-SemiBold",
-						"size": 14,
+						"font": "Poppins",
+						"size": 13,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -1272,7 +1368,7 @@
 					"properties": {
 						"text": "recycle",
 						"enable-bbcode": true,
-						"font": "Montserrat-Bold",
+						"font": "Poppins",
 						"size": 17,
 						"line-height": 0,
 						"bold": false,
@@ -1432,7 +1528,7 @@
 					"properties": {
 						"text": "Points",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Poppins",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,

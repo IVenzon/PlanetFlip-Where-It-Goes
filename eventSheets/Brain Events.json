@@ -269,6 +269,16 @@
 				},
 				{
 					"eventType": "variable",
+					"name": "myinstructions",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 239269857337201
+				},
+				{
+					"eventType": "variable",
 					"name": "mybin",
 					"type": "string",
 					"initialValue": "",
@@ -287,6 +297,14 @@
 							"sid": 840284444516654,
 							"parameters": {
 								"text": "\"Item not recognized!\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ItemInstructions",
+							"sid": 100137061745671,
+							"parameters": {
+								"text": "\"\""
 							}
 						},
 						{
@@ -380,11 +398,28 @@
 											}
 										},
 										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 722876757992401,
+											"parameters": {
+												"variable": "myinstructions",
+												"value": "BrainArray.At(myi,2)"
+											}
+										},
+										{
 											"id": "set-text",
 											"objectClass": "RecycleBinText",
 											"sid": 723056500588231,
 											"parameters": {
 												"text": "mybin"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "ItemInstructions",
+											"sid": 933283045005343,
+											"parameters": {
+												"text": "myinstructions"
 											}
 										},
 										{
@@ -1070,10 +1105,6 @@
 					"parameters": {
 						"text": "\"\""
 					}
-				},
-				{
-					"callFunction": "TextBigToSmall",
-					"sid": 348028369033577
 				}
 			],
 			"sid": 676492701752524
@@ -1129,9 +1160,63 @@
 					"parameters": {
 						"text": "UserPoints + 5"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DoneButton",
+					"sid": 281196188163404,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 101913621851479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 355834695086530,
+					"parameters": {
+						"object": "DoneButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "DoneButton",
+					"sid": 863860444643304
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "TextBigToSmall",
+					"sid": 368329831829480
+				},
+				{
+					"callFunction": "ShowUserInput",
+					"sid": 980588763287112
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DoneButton",
+					"sid": 485047048914284,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "go-to-url",
+					"objectClass": "Browser",
+					"sid": 809315393903250,
+					"parameters": {
+						"url": "\"https://www.google.com/maps/search/goodwill/\"",
+						"target": "self"
+					}
+				}
+			],
+			"sid": 433212061174540
 		},
 		{
 			"eventType": "block",
@@ -1240,6 +1325,14 @@
 				},
 				{
 					"id": "set-visible",
+					"objectClass": "ItemInstructions",
+					"sid": 244063145247075,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "RecycleBinText",
 					"sid": 520327868578752,
 					"parameters": {
@@ -1308,6 +1401,14 @@
 					"id": "set-visible",
 					"objectClass": "RecycleBinText",
 					"sid": 860791038207891,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ItemInstructions",
+					"sid": 604438419399477,
 					"parameters": {
 						"visibility": "invisible"
 					}
