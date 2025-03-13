@@ -1,0 +1,10 @@
+{
+	"name": "PointsMessage",
+	"plugin-id": "Text",
+	"sid": 165811299823163,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

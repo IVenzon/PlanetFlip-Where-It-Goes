@@ -164,7 +164,7 @@
 			"Sprite2",
 			"ItemName",
 			"Touch",
-			"Sprite4",
+			"PointsBubble",
 			"PointsCounter",
 			"LocalStorage",
 			"YesButton",
@@ -175,7 +175,12 @@
 			"DoneButton",
 			"ItemInstructions",
 			"ExampleText",
-			"SpeakInstructions"
+			"SpeakInstructions",
+			"Trophy",
+			"PointsText",
+			"BrainWiz2",
+			"TextBoxSideways",
+			"PointsMessage"
 		],
 		"subfolders": [
 			{

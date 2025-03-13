@@ -1275,12 +1275,12 @@
 					}
 				},
 				{
-					"id": "set-visible",
-					"objectClass": "DoneButton",
-					"sid": 281196188163404,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"callFunction": "ShowPointsScreen",
+					"sid": 669986246631552
+				},
+				{
+					"callFunction": "HideResultsScreen",
+					"sid": 802944842732086
 				}
 			],
 			"sid": 101913621851479
@@ -1318,6 +1318,10 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"callFunction": "HidePointsScreen",
+					"sid": 323467450311777
 				}
 			],
 			"sid": 433212061174540
@@ -1742,6 +1746,200 @@
 				}
 			],
 			"sid": 530861552165738
+		},
+		{
+			"functionName": "HideResultsScreen",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxBig",
+					"sid": 700887105988812,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainWiz",
+					"sid": 118108120114764,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ItemName",
+					"sid": 474273006245473,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ItemInstructions",
+					"sid": 556106269977162,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RecycleBinText",
+					"sid": 759976061545919,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RecycleBin",
+					"sid": 571503946963276,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 124907689927288
+		},
+		{
+			"functionName": "ShowPointsScreen",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "DoneButton",
+					"sid": 557503905275328,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PointsMessage",
+					"sid": 391368705305289,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PointsText",
+					"sid": 348371476209447,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxSideways",
+					"sid": 591718326494815,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainWiz2",
+					"sid": 971155508728034,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Trophy",
+					"sid": 864943162124847,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 991687229420247
+		},
+		{
+			"functionName": "HidePointsScreen",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "DoneButton",
+					"sid": 717592742697447,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PointsMessage",
+					"sid": 142371667289539,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PointsText",
+					"sid": 419052466424804,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextBoxSideways",
+					"sid": 226773636973356,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainWiz2",
+					"sid": 552390248705825,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Trophy",
+					"sid": 515504587764092,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BrainWiz",
+					"sid": 721377128828746,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 638502332201918
 		}
 	],
 	"sid": 328119879192346
