@@ -309,6 +309,14 @@
 							}
 						},
 						{
+							"id": "set-text",
+							"objectClass": "ItemInstructions",
+							"sid": 913062853203687,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
 							"callFunction": "TextSmallToBig",
 							"sid": 810033231969787
 						}
@@ -452,9 +460,9 @@
 										{
 											"id": "set-text",
 											"objectClass": "ItemInstructions",
-											"sid": 244225613928607,
+											"sid": 798429123132518,
 											"parameters": {
-												"text": "\"No additional steps necessary before disposal!\"  "
+												"text": "\"No additional steps necessary!\"  "
 											}
 										}
 									],
