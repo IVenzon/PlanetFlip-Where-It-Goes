@@ -993,9 +993,26 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "GoButton2",
-					"sid": 583945861984968,
+					"sid": 996014518884700,
 					"parameters": {
-						"frame-number": "Self.AnimationFrame = 0 ? 1 : 0"
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 198945366628660,
+					"parameters": {
+						"seconds": "0.01",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "GoButton2",
+					"sid": 764191759796310,
+					"parameters": {
+						"frame-number": "2"
 					}
 				},
 				{
