@@ -706,6 +706,14 @@
 							"parameters": {
 								"text": "\"Hazardous Waste Site\""
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "HazardousButton",
+							"sid": 951454354204286,
+							"parameters": {
+								"visibility": "visible"
+							}
 						}
 					],
 					"sid": 988406470052048
@@ -744,6 +752,14 @@
 							"sid": 983333842140720,
 							"parameters": {
 								"text": "\"Donation Center\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DonationButton",
+							"sid": 566517849839238,
+							"parameters": {
+								"visibility": "visible"
 							}
 						}
 					],
@@ -1359,6 +1375,66 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 361712372983029,
+					"parameters": {
+						"object": "HazardousButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "HazardousButton",
+					"sid": 656381648737496
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-url",
+					"objectClass": "Browser",
+					"sid": 829834505603847,
+					"parameters": {
+						"url": "\"https://www.google.com/maps/search/hazardous+waste+disposal\"",
+						"target": "self"
+					}
+				}
+			],
+			"sid": 627335647046227
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 580465320803500,
+					"parameters": {
+						"object": "DonationButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "DonationButton",
+					"sid": 805278863479060
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-url",
+					"objectClass": "Browser",
+					"sid": 296403370649725,
+					"parameters": {
+						"url": "\"https://www.google.com/maps/search/goodwill\"",
+						"target": "self"
+					}
+				}
+			],
+			"sid": 960276298957453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-created",
 					"objectClass": "Confetti",
 					"sid": 334185606898530
@@ -1671,6 +1747,22 @@
 					"id": "set-visible",
 					"objectClass": "ConfirmationQuestion",
 					"sid": 256481508194504,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HazardousButton",
+					"sid": 779008857355171,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DonationButton",
+					"sid": 495385742869859,
 					"parameters": {
 						"visibility": "invisible"
 					}

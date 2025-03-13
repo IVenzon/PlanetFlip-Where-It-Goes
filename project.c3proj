@@ -175,7 +175,9 @@
 			"DoneButton",
 			"ItemInstructions",
 			"ExampleText",
-			"SpeakInstructions"
+			"SpeakInstructions",
+			"HazardousButton",
+			"DonationButton"
 		],
 		"subfolders": [
 			{
