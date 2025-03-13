@@ -1267,28 +1267,33 @@
 			],
 			"actions": [
 				{
-					"callFunction": "HideConfirmation",
-					"sid": 422380752175493
-				},
-				{
 					"callFunction": "ShootConfetti",
 					"sid": 292085702781261
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 481479479712548,
+					"parameters": {
+						"variable": "UserPoints",
+						"value": "UserPoints + 5"
+					}
+				},
+				{
 					"id": "set-item",
 					"objectClass": "LocalStorage",
-					"sid": 657328566346190,
+					"sid": 538952444463510,
 					"parameters": {
 						"key": "\"points\"",
-						"value": "UserPoints + 5"
+						"value": "UserPoints"
 					}
 				},
 				{
 					"id": "set-text",
 					"objectClass": "PointsCounter",
-					"sid": 124976934724315,
+					"sid": 176064942957378,
 					"parameters": {
-						"text": "UserPoints + 5"
+						"text": "UserPoints"
 					}
 				},
 				{
@@ -1298,6 +1303,10 @@
 				{
 					"callFunction": "HideResultsScreen",
 					"sid": 802944842732086
+				},
+				{
+					"callFunction": "HideConfirmation",
+					"sid": 417478890287410
 				}
 			],
 			"sid": 101913621851479
