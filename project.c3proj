@@ -173,7 +173,8 @@
 			"Particles",
 			"ConfirmationQuestion",
 			"DoneButton",
-			"ItemInstructions"
+			"ItemInstructions",
+			"ExampleText"
 		],
 		"subfolders": [
 			{

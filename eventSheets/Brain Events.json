@@ -179,6 +179,15 @@
 					"parameters": {
 						"text": "UserPoints"
 					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 703294690665180,
+					"parameters": {
+						"key": "\"points\"",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 168259644922090
@@ -434,6 +443,93 @@
 									"sid": 799882706442386
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 187606989842032,
+									"parameters": {
+										"variable": "BrainAnswer",
+										"comparison": 0,
+										"value": "\"reset_points\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 948372269188704,
+									"parameters": {
+										"key": "\"points\"",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 134179295182834,
+									"parameters": {
+										"variable": "UserPoints",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "PointsCounter",
+									"sid": 500747161018182,
+									"parameters": {
+										"text": "UserPoints"
+									}
+								}
+							],
+							"sid": 306364827746266
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 638890905730391,
+									"parameters": {
+										"variable": "BrainAnswer",
+										"comparison": 0,
+										"value": "\"delete_points\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "remove-item",
+									"objectClass": "LocalStorage",
+									"sid": 956709330884202,
+									"parameters": {
+										"key": "\"points\""
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "PointsCounter",
+									"sid": 779175229430518,
+									"parameters": {
+										"text": "\"DEL\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 316248015579131,
+									"parameters": {
+										"variable": "UserPoints",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 777373185647483
 						}
 					]
 				},
@@ -1145,15 +1241,6 @@
 					}
 				},
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 534546374087721,
-					"parameters": {
-						"variable": "UserPoints",
-						"value": "LocalStorage.ItemValue"
-					}
-				},
-				{
 					"id": "set-text",
 					"objectClass": "PointsCounter",
 					"sid": 124976934724315,
@@ -1209,7 +1296,7 @@
 				{
 					"id": "go-to-url",
 					"objectClass": "Browser",
-					"sid": 667899632566271,
+					"sid": 257706559741597,
 					"parameters": {
 						"url": "\"https://www.google.com/maps/search/goodwill/\"",
 						"target": "self"
@@ -1340,6 +1427,14 @@
 					}
 				},
 				{
+					"id": "set-visible",
+					"objectClass": "ExampleText",
+					"sid": 574558582463969,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
 					"callFunction": "HideUserInput",
 					"sid": 463851385116041
 				}
@@ -1411,6 +1506,14 @@
 					"sid": 604438419399477,
 					"parameters": {
 						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ExampleText",
+					"sid": 765147483191292,
+					"parameters": {
+						"visibility": "visible"
 					}
 				}
 			],
