@@ -553,10 +553,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 238.05575408088637,
-						"y": 697.8595680823855,
-						"width": 56.085887592135165,
-						"height": 76.01723607529061,
+						"x": 237.38904062424356,
+						"y": 668.8938891236426,
+						"width": 24.752460678849523,
+						"height": 33.548789680424136,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -804,7 +804,7 @@
 				{
 					"type": "ItemName",
 					"properties": {
-						"text": "Text",
+						"text": "Item Name",
 						"enable-bbcode": true,
 						"font": "Poppins",
 						"size": 20,
@@ -1120,7 +1120,7 @@
 						"indexInFolder": -1,
 						"folderNestingLevel": -1
 					},
-					"showing": true,
+					"showing": false,
 					"locked": false,
 					"world": {
 						"x": 243.4292240179151,
@@ -1239,6 +1239,62 @@
 						"y": 354.55423292054616,
 						"width": 200,
 						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SpeakInstructions",
+					"properties": {
+						"text": "hold to\nspeak",
+						"enable-bbcode": true,
+						"font": "poppins",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 41,
+					"sid": 109581427437750,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 109581427437750,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 178.60829823150476,
+						"y": 691.4103492202513,
+						"width": 119.61264504984337,
+						"height": 43.78065437392138,
 						"originX": 0,
 						"originY": 0,
 						"color": [

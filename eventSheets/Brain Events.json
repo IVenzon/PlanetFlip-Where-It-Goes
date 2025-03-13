@@ -309,14 +309,6 @@
 							}
 						},
 						{
-							"id": "set-text",
-							"objectClass": "ItemInstructions",
-							"sid": 100137061745671,
-							"parameters": {
-								"text": "\"\""
-							}
-						},
-						{
 							"callFunction": "TextSmallToBig",
 							"sid": 810033231969787
 						}
@@ -441,6 +433,32 @@
 										}
 									],
 									"sid": 799882706442386
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 377881783226083,
+											"parameters": {
+												"variable": "myinstructions",
+												"comparison": 0,
+												"value": "\"\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "ItemInstructions",
+											"sid": 244225613928607,
+											"parameters": {
+												"text": "\"No additional steps necessary before disposal!\"  "
+											}
+										}
+									],
+									"sid": 567330957341608
 								}
 							]
 						},
@@ -1292,15 +1310,6 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
-				},
-				{
-					"id": "go-to-url",
-					"objectClass": "Browser",
-					"sid": 257706559741597,
-					"parameters": {
-						"url": "\"https://www.google.com/maps/search/goodwill/\"",
-						"target": "self"
-					}
 				}
 			],
 			"sid": 433212061174540
@@ -1563,6 +1572,14 @@
 					}
 				},
 				{
+					"id": "set-visible",
+					"objectClass": "SpeakInstructions",
+					"sid": 467506926914417,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
 					"callFunction": "ShowConfirmation",
 					"sid": 654740446603340
 				}
@@ -1600,6 +1617,14 @@
 					"id": "set-visible",
 					"objectClass": "TypeInstead",
 					"sid": 265188190567321,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpeakInstructions",
+					"sid": 996183746730632,
 					"parameters": {
 						"visibility": "visible"
 					}

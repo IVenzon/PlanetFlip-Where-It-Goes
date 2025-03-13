@@ -174,7 +174,8 @@
 			"ConfirmationQuestion",
 			"DoneButton",
 			"ItemInstructions",
-			"ExampleText"
+			"ExampleText",
+			"SpeakInstructions"
 		],
 		"subfolders": [
 			{

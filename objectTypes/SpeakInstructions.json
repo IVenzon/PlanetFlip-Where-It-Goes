@@ -1,0 +1,10 @@
+{
+	"name": "SpeakInstructions",
+	"plugin-id": "Text",
+	"sid": 669660168465913,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
