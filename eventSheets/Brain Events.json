@@ -175,9 +175,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "PointsCounter",
-					"sid": 213548952791201,
+					"sid": 461981960396841,
 					"parameters": {
-						"text": "UserPoints"
+						"text": "UserPoints & \" Points\""
 					}
 				},
 				{
@@ -225,9 +225,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "PointsCounter",
-					"sid": 491158613838778,
+					"sid": 666810686043131,
 					"parameters": {
-						"text": "UserPoints"
+						"text": "UserPoints & \" Points\""
 					}
 				}
 			],
@@ -467,6 +467,12 @@
 										}
 									],
 									"sid": 567330957341608
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [],
+									"sid": 269458733675797
 								}
 							]
 						},
@@ -476,11 +482,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 187606989842032,
+									"sid": 764484952048844,
 									"parameters": {
 										"variable": "BrainAnswer",
 										"comparison": 0,
-										"value": "\"reset_points\""
+										"value": "\"goagane\""
 									}
 								}
 							],
@@ -506,9 +512,9 @@
 								{
 									"id": "set-text",
 									"objectClass": "PointsCounter",
-									"sid": 500747161018182,
+									"sid": 904128445574668,
 									"parameters": {
-										"text": "UserPoints"
+										"text": "UserPoints & \" Points\""
 									}
 								}
 							],
@@ -520,11 +526,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 638890905730391,
+									"sid": 190600256434047,
 									"parameters": {
 										"variable": "BrainAnswer",
 										"comparison": 0,
-										"value": "\"delete_points\""
+										"value": "\"forgetmenot\""
 									}
 								}
 							],
@@ -540,9 +546,9 @@
 								{
 									"id": "set-text",
 									"objectClass": "PointsCounter",
-									"sid": 779175229430518,
+									"sid": 735192232637542,
 									"parameters": {
-										"text": "\"DEL\""
+										"text": "\"DELETED\""
 									}
 								},
 								{
@@ -556,6 +562,50 @@
 								}
 							],
 							"sid": 777373185647483
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 584459067610539,
+									"parameters": {
+										"variable": "BrainAnswer",
+										"comparison": 0,
+										"value": "\"fivebigbooms\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 770743909514568,
+									"parameters": {
+										"key": "\"points\"",
+										"value": "925"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 144482596073444,
+									"parameters": {
+										"variable": "UserPoints",
+										"value": "925"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "PointsCounter",
+									"sid": 845103768593391,
+									"parameters": {
+										"text": "925 & \" Points\""
+									}
+								}
+							],
+							"sid": 131526987757834
 						}
 					]
 				},
@@ -1365,9 +1415,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "PointsCounter",
-					"sid": 176064942957378,
+					"sid": 112586437754621,
 					"parameters": {
-						"text": "UserPoints"
+						"text": "UserPoints & \" Points\""
 					}
 				},
 				{
