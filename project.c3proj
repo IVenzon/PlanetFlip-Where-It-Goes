@@ -180,7 +180,9 @@
 			"PointsText",
 			"BrainWiz2",
 			"TextBoxSideways",
-			"PointsMessage"
+			"PointsMessage",
+			"HazardousButton",
+			"DonateButton"
 		],
 		"subfolders": [
 			{
