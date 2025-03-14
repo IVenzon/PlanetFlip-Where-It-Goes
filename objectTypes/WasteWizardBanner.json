@@ -1,7 +1,7 @@
 {
-	"name": "Sprite3",
+	"name": "WasteWizardBanner",
 	"plugin-id": "Sprite",
-	"sid": 426789672698545,
+	"sid": 958253870470186,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,33 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 168,
+						"height": 66,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3003845,
+						"imageSpriteId": 822825,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.015151515151515152
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 360731700792766,
+				"sid": 277379517257458,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

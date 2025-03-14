@@ -303,9 +303,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "RecycleBinText",
-							"sid": 840284444516654,
+							"sid": 582528188445753,
 							"parameters": {
-								"text": "\"Item not recognized!\""
+								"text": "\"Uh oh!\""
 							}
 						},
 						{
@@ -832,9 +832,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "ItemInstructions",
-							"sid": 756116525728611,
+							"sid": 578565482484383,
 							"parameters": {
-								"text": "\"Unfortunately, that item was not found in our database.\""
+								"text": "\"Item was not found in our database.\""
 							}
 						}
 					],
@@ -1250,9 +1250,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "ItemName",
-							"sid": 309727089517480,
+							"sid": 176299878658369,
 							"parameters": {
-								"text": "\"You didn't say anything!\""
+								"text": "\"Sorry, I didn't quite get that. Please try again.\""
 							}
 						}
 					],

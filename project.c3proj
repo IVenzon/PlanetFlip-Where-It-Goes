@@ -158,7 +158,6 @@
 			"SpeechRecognition",
 			"UserTranscript",
 			"TextBoxSmall",
-			"Sprite3",
 			"TypeInstead",
 			"TextBoxBig",
 			"Sprite2",
@@ -183,7 +182,10 @@
 			"PointsMessage",
 			"HazardousButton",
 			"DonateButton",
-			"Sad"
+			"Sad",
+			"Text",
+			"PlanetFlipLogo",
+			"WasteWizardBanner"
 		],
 		"subfolders": [
 			{
