@@ -182,7 +182,8 @@
 			"TextBoxSideways",
 			"PointsMessage",
 			"HazardousButton",
-			"DonateButton"
+			"DonateButton",
+			"Sad"
 		],
 		"subfolders": [
 			{

@@ -565,6 +565,44 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
+							"sid": 650164928788903,
+							"parameters": {
+								"variable": "myfind",
+								"comparison": 0,
+								"value": "\"\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 599312985324090
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 573895992452478
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "HideUserInput",
+							"sid": 414480378199841
+						},
+						{
+							"callFunction": "ShowConfirmation",
+							"sid": 313851569399816
+						}
+					],
+					"sid": 325612398375875
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
 							"sid": 342611037591978,
 							"parameters": {
 								"variable": "mybin",
@@ -778,9 +816,25 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "RecycleBin",
-							"sid": 963016183306107,
+							"sid": 687580057951135,
 							"parameters": {
-								"frame-number": "8"
+								"frame-number": "10"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sad",
+							"sid": 741619943884028,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ItemInstructions",
+							"sid": 756116525728611,
+							"parameters": {
+								"text": "\"Unfortunately, that item was not found in our database.\""
 							}
 						}
 					],
@@ -1260,6 +1314,10 @@
 					"parameters": {
 						"text": "\"\""
 					}
+				},
+				{
+					"callFunction": "TextBigToSmall",
+					"sid": 955836972199320
 				}
 			],
 			"sid": 676492701752524
@@ -1556,10 +1614,6 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
-				},
-				{
-					"callFunction": "HideUserInput",
-					"sid": 463851385116041
 				}
 			],
 			"sid": 203307401652901
@@ -1638,6 +1692,14 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sad",
+					"sid": 661850894063785,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 232275761189562
@@ -1692,10 +1754,6 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
-				},
-				{
-					"callFunction": "ShowConfirmation",
-					"sid": 654740446603340
 				}
 			],
 			"sid": 663851927693159
