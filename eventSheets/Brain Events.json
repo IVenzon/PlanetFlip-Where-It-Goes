@@ -615,37 +615,25 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 650164928788903,
+							"sid": 453112833209957,
 							"parameters": {
 								"variable": "myfind",
-								"comparison": 0,
+								"comparison": 1,
 								"value": "\"\""
 							}
-						}
-					],
-					"actions": [],
-					"sid": 599312985324090
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 573895992452478
 						}
 					],
 					"actions": [
 						{
 							"callFunction": "HideUserInput",
-							"sid": 414480378199841
+							"sid": 367268951783282
 						},
 						{
 							"callFunction": "ShowConfirmation",
-							"sid": 313851569399816
+							"sid": 574798375397840
 						}
 					],
-					"sid": 325612398375875
+					"sid": 599312985324090
 				},
 				{
 					"eventType": "block",
