@@ -1,0 +1,10 @@
+{
+	"name": "Congrats",
+	"plugin-id": "Text",
+	"sid": 300092154884515,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
