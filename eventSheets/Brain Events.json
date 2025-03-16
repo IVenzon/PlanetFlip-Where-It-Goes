@@ -2081,6 +2081,14 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Congrats",
+					"sid": 986000141633797,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 991687229420247
@@ -2150,6 +2158,14 @@
 					"sid": 721377128828746,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Congrats",
+					"sid": 322679085364051,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],
