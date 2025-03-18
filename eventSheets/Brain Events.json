@@ -631,6 +631,14 @@
 						{
 							"callFunction": "ShowConfirmation",
 							"sid": 574798375397840
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ConfirmationQuestion",
+							"sid": 515602143695359,
+							"parameters": {
+								"text": "\"Did you dispose of it correctly?\""
+							}
 						}
 					],
 					"sid": 599312985324090
@@ -790,6 +798,14 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ConfirmationQuestion",
+							"sid": 289645191087942,
+							"parameters": {
+								"text": "\"Do you plan to go to a hazardous waste disposal site?\""
+							}
 						}
 					],
 					"sid": 988406470052048
@@ -836,6 +852,14 @@
 							"sid": 463872180456351,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ConfirmationQuestion",
+							"sid": 514019901987900,
+							"parameters": {
+								"text": "\"Do you plan to go to a donation center?\""
 							}
 						}
 					],
@@ -1476,6 +1500,10 @@
 				{
 					"callFunction": "HidePointsScreen",
 					"sid": 323467450311777
+				},
+				{
+					"callFunction": "HideShareOverlay",
+					"sid": 432982646965901
 				}
 			],
 			"sid": 433212061174540
