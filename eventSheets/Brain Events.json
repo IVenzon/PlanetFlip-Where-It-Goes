@@ -1561,6 +1561,85 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 752318289929773,
+					"parameters": {
+						"object": "ShareButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "ShareButton",
+					"sid": 673214629767833
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "ShowShareOverlay",
+					"sid": 468381609459424
+				}
+			],
+			"sid": 444394093479200
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 789637213674834,
+					"parameters": {
+						"object": "CopyButton"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "CopyButton",
+					"sid": 746850200491825
+				}
+			],
+			"actions": [
+				{
+					"id": "copy-text",
+					"objectClass": "Clipboard",
+					"sid": 979658510645206,
+					"parameters": {
+						"text": "\"I just made the Earth a greener place with the help of PlanetFlip®: Where It Goes! Check it out at https://planetflip.net/wizspeak/\""
+					}
+				}
+			],
+			"sid": 826516211321291
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 403225419956102,
+					"parameters": {
+						"object": "CloseShareOverlay"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "CloseShareOverlay",
+					"sid": 808252647886286
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "HideShareOverlay",
+					"sid": 189593852485408
+				}
+			],
+			"sid": 311734247265566
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-created",
 					"objectClass": "Confetti",
 					"sid": 334185606898530
@@ -2089,6 +2168,14 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ShareButton",
+					"sid": 505609062796772,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 991687229420247
@@ -2167,9 +2254,93 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ShareButton",
+					"sid": 943955708134591,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 638502332201918
+		},
+		{
+			"functionName": "ShowShareOverlay",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ShareOverlay",
+					"sid": 325135615723455,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CloseShareOverlay",
+					"sid": 688785022126236,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CopyButton",
+					"sid": 953946578832363,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 593557072463549
+		},
+		{
+			"functionName": "HideShareOverlay",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ShareOverlay",
+					"sid": 362010638915787,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CloseShareOverlay",
+					"sid": 768004159457920,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CopyButton",
+					"sid": 447498716117748,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 355107950246087
 		}
 	],
 	"sid": 328119879192346

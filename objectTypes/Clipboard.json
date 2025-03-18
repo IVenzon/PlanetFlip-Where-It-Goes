@@ -1,0 +1,12 @@
+{
+	"name": "Clipboard",
+	"plugin-id": "Clipboard",
+	"sid": 830450341660045,
+	"singleglobal-inst": {
+		"type": "Clipboard",
+		"properties": {},
+		"uid": 54,
+		"sid": 392522529807105,
+		"tags": ""
+	}
+}

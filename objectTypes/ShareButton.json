@@ -1,0 +1,64 @@
+{
+	"name": "ShareButton",
+	"plugin-id": "Sprite",
+	"sid": 854229374136871,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 633,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1203633,
+						"collisionPoly": {
+							"points": [
+								0.053712480252764615,
+								0,
+								0.976303317535545,
+								0.036458333333333336,
+								0.990521327014218,
+								0.08333333333333333,
+								1,
+								0.14583333333333334,
+								1,
+								0.8541666666666666,
+								0.990521327014218,
+								0.9166666666666666,
+								0.9510268562401264,
+								1,
+								0.02843601895734597,
+								0.9635416666666666,
+								0.014218009478672985,
+								0.9166666666666666,
+								0.014218009478672985,
+								0.08333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 650078523864367,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

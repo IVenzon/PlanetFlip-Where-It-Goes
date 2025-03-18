@@ -29,6 +29,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Clipboard",
+			"name": "Clipboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Dictionary",
 			"name": "Dictionary",
 			"author": "Scirra",
@@ -186,7 +193,12 @@
 			"Text",
 			"PlanetFlipLogo",
 			"WasteWizardBanner",
-			"Congrats"
+			"Congrats",
+			"ShareButton",
+			"Clipboard",
+			"ShareOverlay",
+			"CopyButton",
+			"CloseShareOverlay"
 		],
 		"subfolders": [
 			{
