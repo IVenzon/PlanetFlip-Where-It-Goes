@@ -482,11 +482,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 764484952048844,
+									"sid": 274776825808277,
 									"parameters": {
 										"variable": "BrainAnswer",
 										"comparison": 0,
-										"value": "\"goagane\""
+										"value": "\"devonly_reset\""
 									}
 								}
 							],
@@ -526,11 +526,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 190600256434047,
+									"sid": 210533213341696,
 									"parameters": {
 										"variable": "BrainAnswer",
 										"comparison": 0,
-										"value": "\"forgetmenot\""
+										"value": "\"devonly_delete\""
 									}
 								}
 							],
@@ -569,11 +569,11 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 584459067610539,
+									"sid": 383749239940361,
 									"parameters": {
 										"variable": "BrainAnswer",
 										"comparison": 0,
-										"value": "\"fivebigbooms\""
+										"value": "\"devonly_bignum\""
 									}
 								}
 							],
@@ -581,27 +581,27 @@
 								{
 									"id": "set-item",
 									"objectClass": "LocalStorage",
-									"sid": 770743909514568,
+									"sid": 617143639479105,
 									"parameters": {
 										"key": "\"points\"",
-										"value": "925"
+										"value": "999"
 									}
 								},
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 144482596073444,
+									"sid": 441701262418609,
 									"parameters": {
 										"variable": "UserPoints",
-										"value": "925"
+										"value": "999"
 									}
 								},
 								{
 									"id": "set-text",
 									"objectClass": "PointsCounter",
-									"sid": 845103768593391,
+									"sid": 707155274445542,
 									"parameters": {
-										"text": "925 & \" Points\""
+										"text": "999 & \" Points\""
 									}
 								}
 							],
@@ -959,9 +959,17 @@
 								{
 									"id": "set-text",
 									"objectClass": "ItemName",
-									"sid": 688623917621918,
+									"sid": 836772978754329,
 									"parameters": {
-										"text": "\"No item entered!\""
+										"text": "\"...\""
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "ItemInstructions",
+									"sid": 284174910404448,
+									"parameters": {
+										"text": "\"It seems you didn't enter anything. Please try again.\""
 									}
 								}
 							],
@@ -1288,7 +1296,15 @@
 						{
 							"id": "set-text",
 							"objectClass": "ItemName",
-							"sid": 176299878658369,
+							"sid": 340625319070094,
+							"parameters": {
+								"text": "\"...\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ItemInstructions",
+							"sid": 383163299761698,
 							"parameters": {
 								"text": "\"Sorry, I didn't quite get that. Please try again.\""
 							}
@@ -1606,6 +1622,31 @@
 					"sid": 979658510645206,
 					"parameters": {
 						"text": "\"I just made the Earth a greener place with the help of PlanetFlip®: Where It Goes! Check it out at https://planetflip.net/wizspeak/\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Copied",
+					"sid": 582103545239134,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 792296882019300,
+					"parameters": {
+						"seconds": "3.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Copied",
+					"sid": 760627528048756,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],

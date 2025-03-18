@@ -198,7 +198,8 @@
 			"Clipboard",
 			"ShareOverlay",
 			"CopyButton",
-			"CloseShareOverlay"
+			"CloseShareOverlay",
+			"Copied"
 		],
 		"subfolders": [
 			{
