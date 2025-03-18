@@ -1,7 +1,7 @@
 {
     "c2array": true,
     "size": [
-        591,
+        592,
         3,
         1
     ],
@@ -6505,6 +6505,17 @@
             ],
             [
                 "Take to HHW or hazardous waste collection center"
+            ]
+        ],
+        [
+            [
+                "plastic bottle"
+            ],
+            [
+                "recycling"
+            ],
+            [
+                "Empty, clean, dry, cap on"
             ]
         ]
     ]
